@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -6,11 +10,45 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
+span a {
+  @apply text-blue-400;
   text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
+}
+
+div, span, h1, h2, h3, h4, h5, h6, p {
+  @apply text-black text-slate-300
+}
+
+.wrapper{
+  @apply relative flex flex-row flex-wrap justify-center rounded-2xl my-4; 
+  @apply bg-slate-200 bg-slate-700 shadow-lg shadow-slate-400 shadow-slate-600;
+}
+.wrapper span{
+  @apply relative flex p-4 flex-col items-center w-40 h-40
+}
+
+.rqz5{ @apply w-24 h-24 }
+
+.max-w{
+  @apply max-w-screen-md mx-auto;
+}
+
+@media only screen and (max-width:767px){
+  .max-w{ @apply w-10/12 }
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+  .max-w{ @apply max-w-screen-sm }
+}
+
+.input{
+  @apply p-4 my-2 mx-4 focus:outline-none bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-slate-300 focus:border-slate-300 block w-full 
+  /*dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500*/
+}
+
+.form{
+  @apply flex flex-col
 }
