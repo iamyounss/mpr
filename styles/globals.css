@@ -1,16 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Montserrat'), url(/fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format('ttf');
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
-a {
-  color: inherit;
+span a {
   text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
+}
+
+div, span, h1, h2, h3, h4, h5, h6, p {
+  @apply  text-slate-800
+}
+.z-1{
+  z-index:1;
+}
+.title{
+  @apply text-2xl font-bold text-black
+}
+.first-letter-title{
+  @apply block md:hidden text-2xl font-bold text-red-400
+}
+
+.sidebar-h{
+  height: calc(100% - 3.5rem);
+  top: 3.5rem;
+}
+
+.sidebar-links {
+  @apply text-slate-800 text-base font-medium px-2 my-2 ml-1 list-none
+}
+
+.wrapper{
+  @apply relative flex flex-row flex-wrap justify-center rounded-2xl my-4; 
+  @apply bg-slate-200 shadow-lg shadow-slate-400 
+  /* bg-slate-700 shadow-slate-600; */
+}
+.wrapper span{
+  @apply relative flex p-4 flex-col items-center w-40 h-40
+}
+
+.rqz5{ 
+  @apply w-24 h-24 }
+
+.max-w{
+  @apply max-w-screen-md mx-auto;
+}
+
+@media only screen and (max-width:767px){
+  .max-w{ 
+    @apply w-10/12 
+  }
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+  .max-w{ 
+    @apply max-w-screen-sm 
+  }
+}
+
+/* Components */
+.form{
+  @apply flex flex-col
+}
+
+.input{
+  @apply p-4 focus:outline-none bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-slate-300 focus:border-slate-300 block w-full 
+  /*dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500*/
+}
+
+.label{
+  @apply block ml-2 mb-2 text-sm font-medium text-gray-900 /* dark:text-gray-300 */
+}
+
+.button-submit{
+  @apply text-white bg-cyan-600 hover:bg-cyan-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center /* dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 */
+}
+
+.card-wrapper{
+  @apply rounded-lg bg-white p-6 border-2 shadow-sm shadow-slate-200
+}
+.card-wrapper h3{
+  @apply text-slate-600 text-lg font-semibold
+}
+.card-wrapper hr{
+  @apply border-t-2 mt-4 mb-8
+}
+.card-wrapper p {
+  @apply text-slate-600 text-sm font-medium mt-2 ml-2
+}
+@media only screen and (max-width:767px){
+.card-wrapper{ 
+  @apply m-6
+}
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+.card-wrapper{ 
+  @apply m-6
+}
+}
+
+.sidebar-navigation-wrapper{
+  @apply  hidden md:block w-64 bg-slate-100 h-screen fixed border-r-2 border-slate-200
+}
+.sidebar-navigation-mobile-wrapper{
+  @apply  block md:hidden w-80 bg-slate-100 h-screen fixed border-r-2 border-slate-200 pt-14
+
+}
+/* Index Page */
+
+.activity-status{
+  @apply flex justify-evenly pt-4
+}
+
+@media only screen and (max-width:767px){
+  .activity-status{ 
+  @apply flex-col  justify-between
+}
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+  .activity-status{ 
+  @apply flex-col justify-between
+}
 }
