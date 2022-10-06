@@ -1,4 +1,4 @@
-import { useAuth } from '../../lib/auth/AuthContext';
+import { useAuth } from '../AuthContext';
 import { useRouter } from 'next/router';
 
 export default function SignOut() {

@@ -1,10 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
-import Alert  from '../Alert/Index';
-import { auth } from '../../config/firebase';
+import Alert  from '../../../base/Alert/Index';
+import { auth } from '../../../../lib/config/firebase';
 import { useRouter } from 'next/router';
 import { useForm } from 'react-hook-form';
-import { useAuth } from '../../lib/auth/AuthContext';
+import { useAuth } from '../AuthContext';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 
 

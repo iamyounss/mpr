@@ -2,7 +2,7 @@ import '../styles/globals.css';
 import cookie from 'cookie';
 import React, { ReactElement } from 'react';
 import App, { AppInitialProps } from 'next/app';
-import { AppProvider } from '../lib/app/AppProvider';
+import { AppProvider } from '../components/containers/app/AppProvider';
 import { CookieMessage } from '../typescript/interfaces'
 
 

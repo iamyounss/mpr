@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { SidebarNavigation } from '../../routes/NavbarRoutes';
+import { SidebarNavigation } from '../../../lib/routes/NavbarRoutes';
 
 export default function SidebarNav() {    
     const getLink = (path) => `${path}`;

@@ -1,4 +1,4 @@
-import DistanceTracker from '../containers/DistanceTracker';
+import DistanceTracker from '../components/base/DistanceTracker';
 
 export default function AuthDistanceTracker(): JSX.Element {
         /**

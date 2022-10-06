@@ -1,6 +1,6 @@
 import React from 'react';
-import Alert from '../Alert/Index';
-import { useAuth } from '../../lib/auth/AuthContext';
+import Alert from '../../../base/Alert/Index';
+import { useAuth } from '../AuthContext';
 import { useForm } from 'react-hook-form';
 import Router from 'next/router';
 import Link from 'next/link';
