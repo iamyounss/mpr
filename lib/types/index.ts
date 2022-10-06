@@ -1,5 +1,6 @@
 import { NextPageContext } from 'next';
 import { IncomingMessage } from 'http';
+import React from 'react';
 
 export interface CookieMessage extends IncomingMessage {
     cookies: { [name: string]: string };
@@ -39,3 +40,24 @@ export interface BookingData {
     driverEmail: string,
     reservationPrice: string | number,
 }
+
+/**
+ * 
+ * Components
+ */
+
+
+ export type AppLayout = {
+    children : React.ReactNode;
+}
+
+export type RegisterWithEmailAndPassword = {
+    email: string,
+    password: string,
+    confirmPassword: string,
+}
+
+export type LoginWithEmailAndPassword = {
+    email: string,
+    password: string,
+  }

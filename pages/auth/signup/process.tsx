@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import SignUpProcess from '../../../components/SignUp/SignUp.process'
+import SignUpProcess from '../../../components/containers/auth/SignUp/SignUp.process'
 import {useRouter} from 'next/router';
 import {
     setUserData,
     driversCollection,
     readUserData,
 } from '../../../lib/functions/firebase';
-import { auth } from '../../../config/firebase';
+import { auth } from '../../../lib/config/firebase';
 
  
 export default function onSignUpProcess(){

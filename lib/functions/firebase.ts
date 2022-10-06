@@ -8,8 +8,8 @@ import {
     DocumentData,
     
 } from 'firebase/firestore'
-import { database } from '../../config/firebase';
-import { UsersData, BookingData, DriversData } from '../../typescript/interfaces';
+import { database } from '../config/firebase';
+import { UsersData, BookingData, DriversData } from '../types/index';
 
 
 // helper to add the type to the db responses

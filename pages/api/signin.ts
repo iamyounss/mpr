@@ -10,7 +10,7 @@ export default (req, res) => {
   };
 
 import { createContext, useContext, useEffect, useState, useMemo, useCallback } from 'react';
-import { auth } from '../../config/firebase';
+import { auth } from '../../lib/config/firebase';
 import {
     User,
     createUserWithEmailAndPassword,

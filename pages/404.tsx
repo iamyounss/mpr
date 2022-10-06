@@ -1,5 +1,5 @@
 import React from 'react';
-import { ErrorPage } from '../components/ErrorPage';
+import { ErrorPage } from '../components/base/ErrorPage';
 
 export default function Error404(): JSX.Element{
     /**

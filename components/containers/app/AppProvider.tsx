@@ -1,5 +1,5 @@
 import { AuthProvider } from '../auth/AuthContext';
-import AuthRequired from '../../lib/auth/AuthRequired';
+import AuthRequired from '../auth/AuthRequired';
 
 
 const AppProvider = ({ 

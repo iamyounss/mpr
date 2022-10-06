@@ -1,4 +1,4 @@
-import { Card }  from '../../components/Card'
+import { Card }  from '../../../base/Card'
 
 export default function AuthIndex(): JSX.Element{
 

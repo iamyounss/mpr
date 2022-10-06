@@ -1,8 +1,8 @@
 import { Fragment } from 'react';
 import { Menu, Transition } from '@headlessui/react';
-import Logout from '../SignOut';
+import Logout from '../../containers/auth/SignOut';
 import {classNames} from '../Layout/Header'
-import { ProfileDropdownNavigation } from '../../routes/NavbarRoutes';
+import { ProfileDropdownNavigation } from '../../../lib/routes/NavbarRoutes';
 
 export default function ProfileDropdown () {
 

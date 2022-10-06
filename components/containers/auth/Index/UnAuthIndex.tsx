@@ -1,4 +1,4 @@
-import SignIn from "../../components/SignIn";
+import SignIn from "../SignIn";
 
 export default function UnAuthIndex(): JSX.Element { 
 

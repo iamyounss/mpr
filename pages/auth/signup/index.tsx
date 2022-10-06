@@ -1,6 +1,6 @@
-import { useAuth } from '../../../lib/auth/AuthContext';
-import AuthIndex from '../../../containers/Index/AuthIndex';
-import SignUp from '../../../components/SignUp';
+import { useAuth } from '../../../components/containers/auth/AuthContext';
+import AuthIndex from '../../../components/containers/auth/Index/AuthIndex';
+import SignUp from '../../../components/containers/auth/SignUp';
 
 export default function OnAccessLoginPage(): JSX.Element {
     // return index page which is returning login form if unlogged
